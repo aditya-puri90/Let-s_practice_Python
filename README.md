@@ -70,6 +70,22 @@ Python_practice/
 │   ├── 32_palindrome_number_checker.py
 │   ├── 33_armstrong_number_checker.py
 │   └── 34_number_guessing_game.py
+├── Strings/
+│   ├── 01_first_and_last_character.py
+│   ├── 02_string_length.py
+│   ├── 03_uppercase_and_lowercase.py
+│   ├── 04_swapcase_converter.py
+│   ├── 05_count_character_occurrences.py
+│   ├── 06_print_characters_individually.py
+│   ├── 07_reverse_string_slicing.py
+│   ├── 08_first_three_characters.py
+│   ├── 09_last_three_characters.py
+│   ├── 10_string_slicing_challenge.py
+│   ├── 11_remove_extra_spaces.py
+│   ├── 12_replace_word_in_string.py
+│   ├── 13_find_word_position.py
+│   ├── 14_count_vowels.py
+│   └── 15_count_spaces.py
 ├── .gitignore
 └── README.md
 ```
@@ -147,6 +163,28 @@ Python_practice/
 
 ---
 
+### 🔹 Module 3: Strings
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_first_and_last_character.py](Strings/01_first_and_last_character.py) | String Indexing (`[0]`, `[-1]`) | Reads a string from the user and prints its first and last characters. |
+| 02 | [02_string_length.py](Strings/02_string_length.py) | Built-in Functions (`len`) | Calculates and displays the total length of a given string using `len()`. |
+| 03 | [03_uppercase_and_lowercase.py](Strings/03_uppercase_and_lowercase.py) | String Methods (`upper`, `lower`) | Converts an input string into uppercase and lowercase representations. |
+| 04 | [04_swapcase_converter.py](Strings/04_swapcase_converter.py) | Case Inversion (`swapcase`) | Toggles uppercase characters to lowercase and lowercase to uppercase. |
+| 05 | [05_count_character_occurrences.py](Strings/05_count_character_occurrences.py) | Substring Count (`count`) | Counts the frequency of a user-specified character in a string. |
+| 06 | [06_print_characters_individually.py](Strings/06_print_characters_individually.py) | String Iteration (`for` loop) | Iterates across each character in a string and prints them on separate lines. |
+| 07 | [07_reverse_string_slicing.py](Strings/07_reverse_string_slicing.py) | Slicing Syntax (`[::-1]`) | Reverses a string using step slicing without auxiliary loops. |
+| 08 | [08_first_three_characters.py](Strings/08_first_three_characters.py) | Slicing (`[:3]`) | Extracts and displays the prefix (first 3 characters) of a string. |
+| 09 | [09_last_three_characters.py](Strings/09_last_three_characters.py) | Negative Slicing (`[-3:]`) | Extracts and displays the suffix (last 3 characters) of a string. |
+| 10 | [10_string_slicing_challenge.py](Strings/10_string_slicing_challenge.py) | Advanced Slicing Techniques | Solves multi-part slicing exercises: substrings, step sampling, and reversal. |
+| 11 | [11_remove_extra_spaces.py](Strings/11_remove_extra_spaces.py) | Whitespace Trimming (`strip`) | Removes leading and trailing whitespace characters using `.strip()`. |
+| 12 | [12_replace_word_in_string.py](Strings/12_replace_word_in_string.py) | String Modification (`replace`) | Finds and replaces target words in a sentence with a specified substitute. |
+| 13 | [13_find_word_position.py](Strings/13_find_word_position.py) | Substring Search (`find`) | Returns the zero-based starting index of a target word inside a sentence. |
+| 14 | [14_count_vowels.py](Strings/14_count_vowels.py) | Iteration & Membership (`in`) | Counts the total count of vowel letters (a, e, i, o, u) in a string. |
+| 15 | [15_count_spaces.py](Strings/15_count_spaces.py) | Loop & Equality Check | Traverses a sentence and counts the total number of whitespace characters. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -163,6 +201,7 @@ Run any script using the python interpreter:
 ```bash
 python Basic/01_user_profile_greeting.py
 python Control_Flow_loops/01_positive_negative_or_zero.py
+python Strings/01_first_and_last_character.py
 ```
 
 ---
