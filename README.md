@@ -208,4 +208,5 @@ python Strings/01_first_and_last_character.py
 
 ## 👤 Author
 - **Aditya Puri**
+- **Data Analyst | Python | 
 - GitHub: [@aditya-puri90](https://github.com/aditya-puri90)
