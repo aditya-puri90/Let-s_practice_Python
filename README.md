@@ -85,7 +85,24 @@ Python_practice/
 │   ├── 12_replace_word_in_string.py
 │   ├── 13_find_word_position.py
 │   ├── 14_count_vowels.py
-│   └── 15_count_spaces.py
+│   ├── 15_count_spaces.py
+│   ├── 16_check_starting_character.py
+│   ├── 17_check_ending_character.py
+│   ├── 18_basic_email_validation.py
+│   ├── 19_password_length_checker.py
+│   ├── 20_palindrome_string_checker.py
+│   ├── 21_count_characters_without_len.py
+│   ├── 22_count_vowels_and_consonants.py
+│   ├── 23_count_digits_in_string.py
+│   ├── 24_count_uppercase_and_lowercase.py
+│   ├── 25_remove_spaces_without_replace.py
+│   ├── 26_reverse_string_without_slicing.py
+│   ├── 27_character_frequency_counter.py
+│   ├── 28_remove_duplicate_characters.py
+│   ├── 29_find_longest_word.py
+│   ├── 30_count_words_in_sentence.py
+│   ├── 31_username_generator.py
+│   └── 32_mini_text_analyzer.py
 ├── .gitignore
 └── README.md
 ```
@@ -182,6 +199,23 @@ Python_practice/
 | 13 | [13_find_word_position.py](Strings/13_find_word_position.py) | Substring Search (`find`) | Returns the zero-based starting index of a target word inside a sentence. |
 | 14 | [14_count_vowels.py](Strings/14_count_vowels.py) | Iteration & Membership (`in`) | Counts the total count of vowel letters (a, e, i, o, u) in a string. |
 | 15 | [15_count_spaces.py](Strings/15_count_spaces.py) | Loop & Equality Check | Traverses a sentence and counts the total number of whitespace characters. |
+| 16 | [16_check_starting_character.py](Strings/16_check_starting_character.py) | Prefix Check (`startswith`) | Checks whether a string begins with a specified character prefix. |
+| 17 | [17_check_ending_character.py](Strings/17_check_ending_character.py) | Suffix Check (`endswith`) | Checks whether a string ends with a target substring suffix. |
+| 18 | [18_basic_email_validation.py](Strings/18_basic_email_validation.py) | Substring Validation | Validates basic email format by checking for required `@` and `.` characters. |
+| 19 | [19_password_length_checker.py](Strings/19_password_length_checker.py) | Length Validation | Evaluates whether a password meets the minimum required length of 8 characters. |
+| 20 | [20_palindrome_string_checker.py](Strings/20_palindrome_string_checker.py) | Slicing & Symmetry | Checks if a string reads the same forwards and backwards using `[::-1]`. |
+| 21 | [21_count_characters_without_len.py](Strings/21_count_characters_without_len.py) | Iterative Counter | Counts total characters in a string using a loop accumulator without `len()`. |
+| 22 | [22_count_vowels_and_consonants.py](Strings/22_count_vowels_and_consonants.py) | Character Classification | Counts vowels and consonants separately while ignoring spaces and symbols. |
+| 23 | [23_count_digits_in_string.py](Strings/23_count_digits_in_string.py) | Character Predicates (`isdigit`) | Counts total numeric digit characters embedded within a string. |
+| 24 | [24_count_uppercase_and_lowercase.py](Strings/24_count_uppercase_and_lowercase.py) | Case Predicates (`isupper`/`islower`) | Tallies uppercase and lowercase letters individually in a mixed string. |
+| 25 | [25_remove_spaces_without_replace.py](Strings/25_remove_spaces_without_replace.py) | Iterative Filtering | Strips all spaces from a sentence using loop filtering without `.replace()`. |
+| 26 | [26_reverse_string_without_slicing.py](Strings/26_reverse_string_without_slicing.py) | Iterative String Reversal | Reverses a string character-by-character through prepend concatenation. |
+| 27 | [27_character_frequency_counter.py](Strings/27_character_frequency_counter.py) | Manual Frequency Counter | Calculates occurrence frequency of a specific character without `.count()`. |
+| 28 | [28_remove_duplicate_characters.py](Strings/28_remove_duplicate_characters.py) | Uniqueness & Order Preservation | Generates a deduplicated character string without using `set()`. |
+| 29 | [29_find_longest_word.py](Strings/29_find_longest_word.py) | String Tokenization (`split`) | Tokenizes a sentence into words and identifies the word with the maximum length. |
+| 30 | [30_count_words_in_sentence.py](Strings/30_count_words_in_sentence.py) | Word Counting (`split`) | Counts total word count in a sentence using whitespace tokenization. |
+| 31 | [31_username_generator.py](Strings/31_username_generator.py) | String Concatenation & Formatting | Constructs a formatted username from first name, last name, and birth year. |
+| 32 | [32_mini_text_analyzer.py](Strings/32_mini_text_analyzer.py) | Comprehensive Text Analytics | Analyzes a paragraph and outputs statistics: chars, words, vowels, consonants, digits, spaces, case counts. |
 
 ---
 
@@ -208,5 +242,5 @@ python Strings/01_first_and_last_character.py
 
 ## 👤 Author
 - **Aditya Puri**
-- **Data Analyst | Python | 
 - GitHub: [@aditya-puri90](https://github.com/aditya-puri90)
+
