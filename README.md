@@ -11,6 +11,8 @@ Welcome to the **Python Practice Programs** repository! This repository contains
 
 The exercises are organized into modules for structured learning:
 
+
+
 ```text
 Python_practice/
 ├── Basic/
