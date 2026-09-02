@@ -3,15 +3,13 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Profile](https://img.shields.io/badge/GitHub-aditya--puri90-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aditya-puri90)
 
-Welcome to the **Python Practice Programs** repository! This repository contains practical Python exercises, beginner-to-intermediate problem-solving scripts, formula implementations, and basic algorithmic concepts.
+Welcome to the **Python Practice Programs** repository! This repository contains practical Python exercises, beginner-to-intermediate problem-solving scripts, formula implementations, algorithmic concepts, and modular design patterns.
 
 ---
 
 ## 📁 Repository Structure
 
 The exercises are organized into modules for structured learning:
-
-
 
 ```text
 Python_practice/
@@ -105,6 +103,47 @@ Python_practice/
 │   ├── 30_count_words_in_sentence.py
 │   ├── 31_username_generator.py
 │   └── 32_mini_text_analyzer.py
+├── Functions/
+│   ├── 01_simple_greeting_function.py
+│   ├── 02_greet_with_argument.py
+│   ├── 03_square_of_a_number.py
+│   ├── 04_sum_of_two_numbers.py
+│   ├── 05_even_or_odd_checker.py
+│   ├── 06_student_details_positional_args.py
+│   ├── 07_calculate_bill_keyword_args.py
+│   ├── 08_default_argument_greeting.py
+│   ├── 09_maximum_of_three_numbers.py
+│   ├── 10_basic_calculator_function.py
+│   ├── 11_multiple_return_values.py
+│   ├── 12_celsius_to_fahrenheit.py
+│   ├── 13_simple_interest_calculator.py
+│   ├── 14_factorial_using_loop.py
+│   ├── 15_string_analyzer_function.py
+│   ├── 16_lambda_square.py
+│   ├── 17_lambda_cube.py
+│   ├── 18_lambda_even_or_odd.py
+│   ├── 19_lambda_addition.py
+│   ├── 20_lambda_maximum.py
+│   ├── 21_recursive_countdown.py
+│   ├── 22_recursive_factorial.py
+│   ├── 23_recursive_sum_of_n.py
+│   ├── 24_recursive_power.py
+│   ├── 25_recursive_fibonacci.py
+│   ├── 26_local_variable_scope.py
+│   ├── 27_global_variable_read.py
+│   ├── 28_local_vs_global_scope.py
+│   ├── 29_global_keyword_modifier.py
+│   ├── 30_variable_lifetime.py
+│   ├── 31_function_docstring_demo.py
+│   ├── 32_calculator_docstring.py
+│   ├── 33_math_module_operations.py
+│   ├── 34_random_module_numbers.py
+│   ├── calculator.py
+│   ├── main.py
+│   ├── 36_datetime_module.py
+│   ├── 37_pyfiglet_ascii_art.py
+│   ├── 38_student_result_system.py
+│   └── 39_prime_number_checker_function.py
 ├── .gitignore
 └── README.md
 ```
@@ -221,6 +260,52 @@ Python_practice/
 
 ---
 
+### 🔹 Module 4: Functions & Modules
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_simple_greeting_function.py](Functions/01_simple_greeting_function.py) | Function Basics | Defines a simple function `greet()` and invokes it multiple times. |
+| 02 | [02_greet_with_argument.py](Functions/02_greet_with_argument.py) | Parameters & Arguments | Passes a single positional name argument into a greeting function. |
+| 03 | [03_square_of_a_number.py](Functions/03_square_of_a_number.py) | Return Values | Computes and returns the square of a given integer. |
+| 04 | [04_sum_of_two_numbers.py](Functions/04_sum_of_two_numbers.py) | Arithmetic Functions | Takes two numeric inputs and returns their calculated sum. |
+| 05 | [05_even_or_odd_checker.py](Functions/05_even_or_odd_checker.py) | Conditional Returns | Evaluates whether a number is even or odd and returns the result string. |
+| 06 | [06_student_details_positional_args.py](Functions/06_student_details_positional_args.py) | Positional Arguments | Accepts and displays multiple student details via positional arguments. |
+| 07 | [07_calculate_bill_keyword_args.py](Functions/07_calculate_bill_keyword_args.py) | Keyword Arguments | Calculates total bill amount using named keyword arguments. |
+| 08 | [08_default_argument_greeting.py](Functions/08_default_argument_greeting.py) | Default Parameters | Provides default argument fallback when optional parameters are omitted. |
+| 09 | [09_maximum_of_three_numbers.py](Functions/09_maximum_of_three_numbers.py) | Comparison Logic | Determines the maximum among three numbers without using `max()`. |
+| 10 | [10_basic_calculator_function.py](Functions/10_basic_calculator_function.py) | Control Flow & Dispatch | Performs arithmetic operations based on operator argument (`+`, `-`, `*`, `/`). |
+| 11 | [11_multiple_return_values.py](Functions/11_multiple_return_values.py) | Tuple Unpacking | Returns multiple arithmetic results from a single function call. |
+| 12 | [12_celsius_to_fahrenheit.py](Functions/12_celsius_to_fahrenheit.py) | Unit Conversion | Converts temperature from Celsius to Fahrenheit using conversion formula. |
+| 13 | [13_simple_interest_calculator.py](Functions/13_simple_interest_calculator.py) | Financial Math | Computes simple interest given principal, rate, and time. |
+| 14 | [14_factorial_using_loop.py](Functions/14_factorial_using_loop.py) | Iterative Algorithms | Calculates $N!$ using a `for` loop accumulator inside a function. |
+| 15 | [15_string_analyzer_function.py](Functions/15_string_analyzer_function.py) | String Analytics | Computes length, uppercase, and lowercase representations simultaneously. |
+| 16 | [16_lambda_square.py](Functions/16_lambda_square.py) | Lambda Expressions | Anonymous single-expression function computing square of a number. |
+| 17 | [17_lambda_cube.py](Functions/17_lambda_cube.py) | Lambda Functions | Computes the cube of a number using a lambda expression. |
+| 18 | [18_lambda_even_or_odd.py](Functions/18_lambda_even_or_odd.py) | Lambda Predicates | Evaluates even/odd condition returning boolean via lambda. |
+| 19 | [19_lambda_addition.py](Functions/19_lambda_addition.py) | Multi-argument Lambdas | Adds two numbers using a two-parameter lambda function. |
+| 20 | [20_lambda_maximum.py](Functions/20_lambda_maximum.py) | Ternary in Lambda | Determines maximum of two numbers using conditional expression in lambda. |
+| 21 | [21_recursive_countdown.py](Functions/21_recursive_countdown.py) | Recursion Basics | Implements recursive countdown printing from $N$ down to 0 with base case. |
+| 22 | [22_recursive_factorial.py](Functions/22_recursive_factorial.py) | Recursive Algorithms | Computes $N!$ using recurrence relation $N \times (N-1)!$. |
+| 23 | [23_recursive_sum_of_n.py](Functions/23_recursive_sum_of_n.py) | Recursive Accumulation | Calculates series sum $1 + 2 + \dots + N$ through recursive calls. |
+| 24 | [24_recursive_power.py](Functions/24_recursive_power.py) | Exponentiation Recursion | Computes $\text{base}^{\text{exponent}}$ recursively. |
+| 25 | [25_recursive_fibonacci.py](Functions/25_recursive_fibonacci.py) | Fibonacci Recursion | Generates $N$-th Fibonacci term using multi-branch recursive calls. |
+| 26 | [26_local_variable_scope.py](Functions/26_local_variable_scope.py) | Local Scope | Demonstrates that variables defined inside a function cannot be accessed globally. |
+| 27 | [27_global_variable_read.py](Functions/27_global_variable_read.py) | Global Scope Access | Reads and displays global variables within inner function bodies. |
+| 28 | [28_local_vs_global_scope.py](Functions/28_local_vs_global_scope.py) | Variable Shadowing | Demonstrates how local variables shadow identically-named global variables. |
+| 29 | [29_global_keyword_modifier.py](Functions/29_global_keyword_modifier.py) | `global` Keyword | Modifies global variable values from within local function scope. |
+| 30 | [30_variable_lifetime.py](Functions/30_variable_lifetime.py) | Variable Lifetime | Illustrates lifetime and stack frame cleanup of local variables. |
+| 31 | [31_function_docstring_demo.py](Functions/31_function_docstring_demo.py) | Documentation Strings | Documents function parameters and returns; inspected with `__doc__`. |
+| 32 | [32_calculator_docstring.py](Functions/32_calculator_docstring.py) | Standard Docstrings | Implements structured multi-line docstring for arithmetic operations. |
+| 33 | [33_math_module_operations.py](Functions/33_math_module_operations.py) | Built-in `math` Module | Computes square root, powers, and accesses $\pi$ constant. |
+| 34 | [34_random_module_numbers.py](Functions/34_random_module_numbers.py) | Built-in `random` Module | Generates pseudo-random integers within specified ranges. |
+| 35 | [calculator.py](Functions/calculator.py) / [main.py](Functions/main.py) | Custom Modules & Imports | Creates a reusable custom module and imports its helper functions. |
+| 36 | [36_datetime_module.py](Functions/36_datetime_module.py) | Built-in `datetime` Module | Formats and displays current system date and time stamps. |
+| 37 | [37_pyfiglet_ascii_art.py](Functions/37_pyfiglet_ascii_art.py) | Third-Party Packages | Imports and uses pip package `pyfiglet` for formatted ASCII banner output. |
+| 38 | [38_student_result_system.py](Functions/38_student_result_system.py) | Modular Architecture | Combines multiple helper functions into a complete student report system. |
+| 39 | [39_prime_number_checker_function.py](Functions/39_prime_number_checker_function.py) | Primality Testing | Implements optimized square-root primality check function. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -238,6 +323,7 @@ Run any script using the python interpreter:
 python Basic/01_user_profile_greeting.py
 python Control_Flow_loops/01_positive_negative_or_zero.py
 python Strings/01_first_and_last_character.py
+python Functions/01_simple_greeting_function.py
 ```
 
 ---
@@ -245,4 +331,3 @@ python Strings/01_first_and_last_character.py
 ## 👤 Author
 - **Aditya Puri**
 - GitHub: [@aditya-puri90](https://github.com/aditya-puri90)
-
