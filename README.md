@@ -144,6 +144,36 @@ Python_practice/
 │   ├── 37_pyfiglet_ascii_art.py
 │   ├── 38_student_result_system.py
 │   └── 39_prime_number_checker_function.py
+├── DataStructures/
+│   ├── 01_example.py
+│   ├── 02_example.py
+│   ├── 03_example.py
+│   ├── 04_example.py
+│   ├── 05_example.py
+│   ├── 06_example.py
+│   ├── 07_example.py
+│   ├── 08_example.py
+│   ├── 09_example.py
+│   ├── 10_example.py
+│   ├── 11_example.py
+│   ├── 12_example.py
+│   ├── 13_example.py
+│   ├── 14_example.py
+│   ├── 15_example.py
+│   ├── 16_example.py
+│   ├── 17_example.py
+│   ├── 18_example.py
+│   ├── 19_example.py
+│   ├── 20_example.py
+│   ├── 21_example.py
+│   ├── 22_example.py
+│   ├── 23_example.py
+│   ├── 24_example.py
+│   ├── 25_example.py
+│   ├── 26_example.py
+│   ├── 27_example.py
+│   ├── 28_example.py
+│   └── 29_example.py
 ├── .gitignore
 └── README.md
 ```
@@ -306,6 +336,42 @@ Python_practice/
 
 ---
 
+### 🔹 Module 5: Data Structures (Lists, Tuples, Sets, Dictionaries)
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_example.py](DataStructures/01_example.py) | List Creation | Creates a list of integers and prints the full collection. |
+| 02 | [02_example.py](DataStructures/02_example.py) | List Indexing | Accesses the first, last, and intermediate elements using 0-based and negative indexing. |
+| 03 | [03_example.py](DataStructures/03_example.py) | List Modification | Mutates list elements via index reassignment (`fruits[1] = "grapes"`). |
+| 04 | [04_example.py](DataStructures/04_example.py) | List Methods (`append`) | Adds new elements to the end of a list using `.append()`. |
+| 05 | [05_example.py](DataStructures/05_example.py) | List Methods (`insert`) | Inserts an element at a target positional index using `.insert()`. |
+| 06 | [06_example.py](DataStructures/06_example.py) | List Methods (`pop`) | Removes and deletes an element at a specified index using `.pop()`. |
+| 07 | [07_example.py](DataStructures/07_example.py) | List Analytics (`max`, `min`) | Finds the largest and smallest numbers in a list using built-in functions. |
+| 08 | [08_example.py](DataStructures/08_example.py) | List Iteration & Counting | Counts even numbers in a list using a `for` loop and conditional check. |
+| 09 | [09_example.py](DataStructures/09_example.py) | Tuple Creation | Creates and prints an immutable tuple containing programming languages. |
+| 10 | [10_example.py](DataStructures/10_example.py) | Tuple Indexing & Slicing | Accesses first, last, and sliced range segments from a tuple. |
+| 11 | [11_example.py](DataStructures/11_example.py) | Tuple Unpacking | Unpacks tuple values directly into named variables (`name`, `age`, `course`). |
+| 12 | [12_example.py](DataStructures/12_example.py) | Tuple Methods (`count`, `index`) | Queries occurrence count and locates element index in a tuple. |
+| 13 | [13_example.py](DataStructures/13_example.py) | Type Conversion (`tuple`) | Converts a mutable list into an immutable tuple using `tuple()`. |
+| 14 | [14_example.py](DataStructures/14_example.py) | Tuple Analytics (`max`, `min`) | Computes maximum and minimum values from a numeric tuple. |
+| 15 | [15_example.py](DataStructures/15_example.py) | Set Creation | Creates and prints an unordered set of unique numbers. |
+| 16 | [16_example.py](DataStructures/16_example.py) | Deduplication (`set`) | Eliminates duplicate numbers from a list by converting it to a set. |
+| 17 | [17_example.py](DataStructures/17_example.py) | Set Methods (`add`, `remove`) | Inserts new items and deletes existing members from a set. |
+| 18 | [18_example.py](DataStructures/18_example.py) | Set Operations (`union`) | Computes the union ($A \cup B$) of two sets using `.union()`. |
+| 19 | [19_example.py](DataStructures/19_example.py) | Set Operations (`intersection`) | Computes the intersection ($A \cap B$) of two sets using `.intersection()`. |
+| 20 | [20_example.py](DataStructures/20_example.py) | Set Operations (`difference`) | Computes set differences ($A - B$ and $B - A$). |
+| 21 | [21_example.py](DataStructures/21_example.py) | Set Methods (`issubset`) | Verifies whether one set is a subset of another using `.issubset()`. |
+| 22 | [22_example.py](DataStructures/22_example.py) | Dictionary Creation | Creates a key-value dictionary storing student attributes. |
+| 23 | [23_example.py](DataStructures/23_example.py) | Dictionary Access | Retrieves and prints individual values by dictionary key lookup. |
+| 24 | [24_example.py](DataStructures/24_example.py) | Dictionary Insertion | Adds a new key-value entry (`"city": "Pune"`) to an existing dictionary. |
+| 25 | [25_example.py](DataStructures/25_example.py) | Dictionary Modification | Updates the stored value for an existing dictionary key. |
+| 26 | [26_example.py](DataStructures/26_example.py) | Dictionary Deletion (`del`) | Removes a specific key-value pair from a dictionary using `del`. |
+| 27 | [27_example.py](DataStructures/27_example.py) | Dictionary Methods (`keys`, `values`, `items`) | Iterates across keys, values, and key-value tuple pairs. |
+| 28 | [28_example.py](DataStructures/28_example.py) | Frequency Counter Pattern | Tallies the occurrence frequency of items in a list using a dictionary map. |
+| 29 | [29_example.py](DataStructures/29_example.py) | Dictionary Analytics & Aggregation | Computes total score, percentage, and locates the highest scoring subject. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -324,6 +390,7 @@ python Basic/01_user_profile_greeting.py
 python Control_Flow_loops/01_positive_negative_or_zero.py
 python Strings/01_first_and_last_character.py
 python Functions/01_simple_greeting_function.py
+python DataStructures/01_example.py
 ```
 
 ---
