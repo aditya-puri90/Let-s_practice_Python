@@ -174,6 +174,34 @@ Python_practice/
 │   ├── 27_print_dictionary_keys_and_values.py
 │   ├── 28_count_frequency_using_dictionary.py
 │   └── 29_student_marks_dictionary.py
+├── OOPS/
+│   ├── 01_create_class.py
+│   ├── 02_student_information.py
+│   ├── 03_multiple_objects.py
+│   ├── 04_employee_class.py
+│   ├── 05_car_class.py
+│   ├── 06_constructor_init.py
+│   ├── 07_self_keyword_demo.py
+│   ├── 08_calculator_class.py
+│   ├── 09_rectangle_area_and_perimeter.py
+│   ├── 10_circle_area_and_circumference.py
+│   ├── 11_bank_account.py
+│   ├── 12_student_result.py
+│   ├── 13_employee_salary_calculator.py
+│   ├── 14_product_billing.py
+│   ├── 15_library_book.py
+│   ├── 16_private_variable_bank_account.py
+│   ├── 17_password_protection.py
+│   ├── 18_encapsulation_getter_setter.py
+│   ├── 19_single_inheritance.py
+│   ├── 20_person_student_inheritance.py
+│   ├── 21_vehicle_car_inheritance.py
+│   ├── 22_employee_manager_inheritance.py
+│   ├── 23_multilevel_inheritance.py
+│   ├── 24_super_keyword_demo.py
+│   ├── 25_method_overriding.py
+│   ├── 26_polymorphism_with_loop.py
+│   └── 27_abstract_shape_class.py
 ├── .gitignore
 └── README.md
 ```
@@ -372,6 +400,40 @@ Python_practice/
 
 ---
 
+### 🔹 Module 6: Object-Oriented Programming (OOPs)
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_create_class.py](OOPS/01_create_class.py) | Class & Object Basics | Defines an empty `Student` class and creates an object instance. |
+| 02 | [02_student_information.py](OOPS/02_student_information.py) | Attributes & Methods | Defines a `Student` class with attributes and displays student info. |
+| 03 | [03_multiple_objects.py](OOPS/03_multiple_objects.py) | Multiple Instances | Instantiates multiple `Student` objects with unique data and displays them. |
+| 04 | [04_employee_class.py](OOPS/04_employee_class.py) | Class Modeling | Creates an `Employee` class with name, salary, and department. |
+| 05 | [05_car_class.py](OOPS/05_car_class.py) | Object Instantiation | Creates a `Car` class with brand, model, and price attributes. |
+| 06 | [06_constructor_init.py](OOPS/06_constructor_init.py) | `__init__()` Constructor | Uses constructor `__init__` to initialize student attributes upon creation. |
+| 07 | [07_self_keyword_demo.py](OOPS/07_self_keyword_demo.py) | Instance Reference (`self`) | Illustrates the role of `self` in binding attributes to instance objects. |
+| 08 | [08_calculator_class.py](OOPS/08_calculator_class.py) | Class Methods | Implements arithmetic methods (`add`, `subtract`, `multiply`, `division`). |
+| 09 | [09_rectangle_area_and_perimeter.py](OOPS/09_rectangle_area_and_perimeter.py) | Geometric Methods | Computes area and perimeter methods within a `Rectangle` class. |
+| 10 | [10_circle_area_and_circumference.py](OOPS/10_circle_area_and_circumference.py) | Mathematical Calculations | Calculates circle area ($\pi r^2$) and circumference ($2\pi r$) using methods. |
+| 11 | [11_bank_account.py](OOPS/11_bank_account.py) | State Management | Manages bank transactions with `deposit()`, `withdraw()`, and `check_balance()`. |
+| 12 | [12_student_result.py](OOPS/12_student_result.py) | Multi-attribute Processing | Calculates total marks, percentage, and grade for student marks. |
+| 13 | [13_employee_salary_calculator.py](OOPS/13_employee_salary_calculator.py) | Business Logic Methods | Computes HRA (20%), DA (10%), and gross salary calculations. |
+| 14 | [14_product_billing.py](OOPS/14_product_billing.py) | Billing & Operations | Models a `Product` item and computes total billable price ($price \times quantity$). |
+| 15 | [15_library_book.py](OOPS/15_library_book.py) | Object Collections | Manages a library collection of `Book` objects with title, author, and price. |
+| 16 | [16_private_variable_bank_account.py](OOPS/16_private_variable_bank_account.py) | Encapsulation & Private Vars | Protects account balance using private variable `_balance` / `__balance`. |
+| 17 | [17_password_protection.py](OOPS/17_password_protection.py) | Data Security & Verification | Implements private password verification with `verify()` method. |
+| 18 | [18_encapsulation_getter_setter.py](OOPS/18_encapsulation_getter_setter.py) | Getters & Setters | Validates and updates private marks attribute using encapsulation rules. |
+| 19 | [19_single_inheritance.py](OOPS/19_single_inheritance.py) | Single Inheritance | Inherits base `Animal` methods in derived `Dog` class. |
+| 20 | [20_person_student_inheritance.py](OOPS/20_person_student_inheritance.py) | Constructor Inheritance | Extends `Person` attributes with `Student` course and college fields via `super()`. |
+| 21 | [21_vehicle_car_inheritance.py](OOPS/21_vehicle_car_inheritance.py) | Class Hierarchies | Derived `Car` class extends base `Vehicle` attributes. |
+| 22 | [22_employee_manager_inheritance.py](OOPS/22_employee_manager_inheritance.py) | Organizational Hierarchy | `Manager` inherits `Employee` salary attributes and adds team management fields. |
+| 23 | [23_multilevel_inheritance.py](OOPS/23_multilevel_inheritance.py) | Multilevel Inheritance | Implements 3-tier hierarchy (`Animal` $\rightarrow$ `Mammal` $\rightarrow$ `Dog`). |
+| 24 | [24_super_keyword_demo.py](OOPS/24_super_keyword_demo.py) | `super()` Method | Explicitly delegates constructor initialization to parent class. |
+| 25 | [25_method_overriding.py](OOPS/25_method_overriding.py) | Method Overriding | Overrides base class `sound()` method across `Dog`, `Cat`, and `Cow`. |
+| 26 | [26_polymorphism_with_loop.py](OOPS/26_polymorphism_with_loop.py) | Polymorphism & Duck Typing | Calls polymorphic `sound()` method across diverse objects in an iterable loop. |
+| 27 | [27_abstract_shape_class.py](OOPS/27_abstract_shape_class.py) | Abstract Base Classes (`abc`) | Defines abstract base class `Shapes` with `@abstractmethod` implemented by subclasses. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -391,6 +453,7 @@ python Control_Flow_loops/01_positive_negative_or_zero.py
 python Strings/01_first_and_last_character.py
 python Functions/01_simple_greeting_function.py
 python DataStructures/01_create_and_print_list.py
+python OOPS/01_create_class.py
 ```
 
 ---
