@@ -202,6 +202,41 @@ Python_practice/
 │   ├── 25_method_overriding.py
 │   ├── 26_polymorphism_with_loop.py
 │   └── 27_abstract_shape_class.py
+├── Adv_python/
+│   ├── 01_args_sum_numbers.py
+│   ├── 02_args_find_maximum.py
+│   ├── 03_args_count_arguments.py
+│   ├── 04_kwargs_student_details.py
+│   ├── 05_args_and_kwargs_student_profile.py
+│   ├── 06_flexible_calculator.py
+│   ├── 07_map_square_numbers.py
+│   ├── 08_map_celsius_to_fahrenheit.py
+│   ├── 09_map_string_to_integer.py
+│   ├── 10_filter_even_numbers.py
+│   ├── 11_filter_greater_than_50.py
+│   ├── 12_filter_names_by_length.py
+│   ├── 13_reduce_sum_of_numbers.py
+│   ├── 14_reduce_product_of_numbers.py
+│   ├── 15_reduce_find_largest.py
+│   ├── 16_map_filter_reduce_combined.py
+│   ├── 17_getter_private_variable.py
+│   ├── 18_getter_setter_student_marks.py
+│   ├── 19_setter_salary_validation.py
+│   ├── 20_property_age_validation.py
+│   ├── 21_property_bank_account_balance.py
+│   ├── 22_staticmethod_is_even.py
+│   ├── 23_staticmethod_calculator.py
+│   ├── 24_classmethod_change_school.py
+│   ├── 25_classmethod_alternative_constructor.py
+│   ├── 26_instance_static_class_methods.py
+│   ├── 27_decorator_basic_display_message.py
+│   ├── 28_decorator_greeting_message.py
+│   ├── 29_decorator_execution_time.py
+│   ├── 30_decorator_check_login.py
+│   ├── 31_decorator_function_name_logging.py
+│   ├── 32_multiple_decorators_order.py
+│   ├── 33_dunder_len_team_players.py
+│   └── 34_dunder_str_and_eq_book.py
 ├── .gitignore
 └── README.md
 ```
@@ -434,6 +469,47 @@ Python_practice/
 
 ---
 
+### 🔹 Module 7: Advanced Python (`*args`, `**kwargs`, Map/Filter/Reduce, Encapsulation, Methods, Decorators & Dunder Methods)
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_args_sum_numbers.py](Adv_python/01_args_sum_numbers.py) | Variable Positional Arguments (`*args`) | Implements `sum_numbers(*args)` accepting any number of numeric values and returning their sum. |
+| 02 | [02_args_find_maximum.py](Adv_python/02_args_find_maximum.py) | Custom Max Logic (`*args`) | Finds and returns the maximum number among arbitrary arguments without calling `max()`. |
+| 03 | [03_args_count_arguments.py](Adv_python/03_args_count_arguments.py) | Argument Length Inspection | Returns the count of arbitrary arguments passed to a function using `len(args)`. |
+| 04 | [04_kwargs_student_details.py](Adv_python/04_kwargs_student_details.py) | Keyword Arguments (`**kwargs`) | Receives named key-value arguments and traverses them using `.items()`. |
+| 05 | [05_args_and_kwargs_student_profile.py](Adv_python/05_args_and_kwargs_student_profile.py) | Combined `*args` & `**kwargs` | Accepts positional subject names via `*args` and key-value profile data via `**kwargs`. |
+| 06 | [06_flexible_calculator.py](Adv_python/06_flexible_calculator.py) | Dynamic Operations with `*args` | Performs flexible calculations (`add`, `multiply`, `subtract`) across variable argument sequences. |
+| 07 | [07_map_square_numbers.py](Adv_python/07_map_square_numbers.py) | Functional Mapping (`map`) | Applies lambda expression to compute squares for all elements in a list. |
+| 08 | [08_map_celsius_to_fahrenheit.py](Adv_python/08_map_celsius_to_fahrenheit.py) | Mathematical Transformation (`map`) | Transforms Celsius temperatures to Fahrenheit using `map()` and conversion formula. |
+| 09 | [09_map_string_to_integer.py](Adv_python/09_map_string_to_integer.py) | Type Casting Pipeline (`map`) | Converts a list of numeric string literals into integer data types via `map(int, ...)`. |
+| 10 | [10_filter_even_numbers.py](Adv_python/10_filter_even_numbers.py) | Predicate Filtering (`filter`) | Filters an integer list to extract only even numbers satisfying modulo condition. |
+| 11 | [11_filter_greater_than_50.py](Adv_python/11_filter_greater_than_50.py) | Threshold Filtering (`filter`) | Filters list elements retaining only numbers strictly greater than 50. |
+| 12 | [12_filter_names_by_length.py](Adv_python/12_filter_names_by_length.py) | String Predicate Filtering (`filter`) | Filters a list of names selecting only items with character length exceeding 4. |
+| 13 | [13_reduce_sum_of_numbers.py](Adv_python/13_reduce_sum_of_numbers.py) | Cumulative Aggregation (`reduce`) | Computes cumulative sum over an iterable using `functools.reduce` and lambda. |
+| 14 | [14_reduce_product_of_numbers.py](Adv_python/14_reduce_product_of_numbers.py) | Cumulative Product (`reduce`) | Calculates product of an integer series using `functools.reduce`. |
+| 15 | [15_reduce_find_largest.py](Adv_python/15_reduce_find_largest.py) | Conditional Reduction (`reduce`) | Finds maximum value in an array using accumulator comparison with `reduce`. |
+| 16 | [16_map_filter_reduce_combined.py](Adv_python/16_map_filter_reduce_combined.py) | Functional Pipeline Composition | Composes `filter()` (even check), `map()` (squaring), and `reduce()` (summation) in a data pipeline. |
+| 17 | [17_getter_private_variable.py](Adv_python/17_getter_private_variable.py) | Data Hiding & Getters | Encapsulates private attribute `__name` in a class and provides controlled access via `get_name()`. |
+| 18 | [18_getter_setter_student_marks.py](Adv_python/18_getter_setter_student_marks.py) | Setter Range Validation | Implements getter and setter enforcing valid mark boundary constraints (0–100). |
+| 19 | [19_setter_salary_validation.py](Adv_python/19_setter_salary_validation.py) | Business Logic Validation | Implements salary setter rejecting negative numeric values with error messaging. |
+| 20 | [20_property_age_validation.py](Adv_python/20_property_age_validation.py) | `@property` & Setter Decorator | Uses modern Pythonic `@property` and `@age.setter` decorators for managed age attribute access. |
+| 21 | [21_property_bank_account_balance.py](Adv_python/21_property_bank_account_balance.py) | Managed Banking Encapsulation | Encapsulates account balance with `@property` ensuring non-negative balance assignments. |
+| 22 | [22_staticmethod_is_even.py](Adv_python/22_staticmethod_is_even.py) | Static Methods (`@staticmethod`) | Defines class utility method `is_even()` operating independently of class or instance state. |
+| 23 | [23_staticmethod_calculator.py](Adv_python/23_staticmethod_calculator.py) | Static Arithmetic Utility Class | Encapsulates arithmetic operations in static methods invocable directly from the class. |
+| 24 | [24_classmethod_change_school.py](Adv_python/24_classmethod_change_school.py) | Class Methods (`@classmethod`) | Implements `change_school(cls, ...)` to mutate class-level attributes across all instances. |
+| 25 | [25_classmethod_alternative_constructor.py](Adv_python/25_classmethod_alternative_constructor.py) | Factory Methods (`@classmethod`) | Implements `from_string(cls, ...)` as an alternative constructor parsing delimited data strings. |
+| 26 | [26_instance_static_class_methods.py](Adv_python/26_instance_static_class_methods.py) | Method Architecture Comparison | Demonstrates distinction between instance (`self`), static (`@staticmethod`), and class (`@classmethod`) methods. |
+| 27 | [27_decorator_basic_display_message.py](Adv_python/27_decorator_basic_display_message.py) | Decorator Foundations | Constructs a custom decorator wrapping a target function to execute pre-invocation logic. |
+| 28 | [28_decorator_greeting_message.py](Adv_python/28_decorator_greeting_message.py) | Greeting Wrapper Decorator | Implements `@greet_decorator` printing custom greeting banners prior to function execution. |
+| 29 | [29_decorator_execution_time.py](Adv_python/29_decorator_execution_time.py) | Performance Benchmarking Decorator | Measures and displays function runtime execution duration using `time.time()`. |
+| 30 | [30_decorator_check_login.py](Adv_python/30_decorator_check_login.py) | Authorization & Guard Decorators | Restricts function access based on user authentication state before dispatching call. |
+| 31 | [31_decorator_function_name_logging.py](Adv_python/31_decorator_function_name_logging.py) | Metadata Logging Decorators | Automatically inspects and logs `func.__name__` prior to executing arbitrary functions. |
+| 32 | [32_multiple_decorators_order.py](Adv_python/32_multiple_decorators_order.py) | Decorator Chaining & Stacking | Chains multiple decorators (`@decorator1`, `@decorator2`) demonstrating bottom-up evaluation order. |
+| 33 | [33_dunder_len_team_players.py](Adv_python/33_dunder_len_team_players.py) | Magic Methods (`__len__`) | Implements `__len__()` enabling standard `len(obj)` calls on custom class instances. |
+| 34 | [34_dunder_str_and_eq_book.py](Adv_python/34_dunder_str_and_eq_book.py) | String & Equality Dunder Methods | Overrides `__str__()` for string representation and `__eq__()` for ISBN-based object equality. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -454,6 +530,7 @@ python Strings/01_first_and_last_character.py
 python Functions/01_simple_greeting_function.py
 python DataStructures/01_create_and_print_list.py
 python OOPS/01_create_class.py
+python Adv_python/01_args_sum_numbers.py
 ```
 
 ---
@@ -461,3 +538,4 @@ python OOPS/01_create_class.py
 ## 👤 Author
 - **Aditya Puri**
 - GitHub: [@aditya-puri90](https://github.com/aditya-puri90)
+
