@@ -1,0 +1,5 @@
+Line 1: Python is fun.
+Line 2: I am learning file handaling
+Line 3: Data Science uses Python .
+Line 4: Practice makes perfect .
+Line 5: Keep coding daily.

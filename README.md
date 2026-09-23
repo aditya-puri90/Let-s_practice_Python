@@ -237,6 +237,42 @@ Python_practice/
 │   ├── 32_multiple_decorators_order.py
 │   ├── 33_dunder_len_team_players.py
 │   └── 34_dunder_str_and_eq_book.py
+├── Files_IO_AND_osmodule/
+│   ├── 01_create_and_write_file.py
+│   ├── 02_read_file_contents.py
+│   ├── 03_read_first_n_characters.py
+│   ├── 04_read_single_line.py
+│   ├── 05_read_all_lines.py
+│   ├── 06_read_line_by_line_loop.py
+│   ├── 07_count_lines_in_file.py
+│   ├── 08_count_characters_in_file.py
+│   ├── 09_count_words_in_file.py
+│   ├── 10_append_data_to_file.py
+│   ├── 11_write_multiple_lines.py
+│   ├── 12_copy_file_content.py
+│   ├── 13_count_vowels_in_file.py
+│   ├── 14_count_char_types_in_file.py
+│   ├── 15_find_word_in_file.py
+│   ├── 16_replace_word_in_file.py
+│   ├── 17_reverse_file_content.py
+│   ├── 18_with_open_context_manager.py
+│   ├── 19_file_pointer_tell.py
+│   ├── 20_file_pointer_seek.py
+│   ├── 21_create_csv_file.py
+│   ├── 22_read_csv_file.py
+│   ├── 23_csv_highest_marks.py
+│   ├── 24_csv_average_marks.py
+│   ├── 25_csv_filter_marks.py
+│   ├── 26_os_get_current_directory.py
+│   ├── 27_os_list_files_and_folders.py
+│   ├── 28_os_create_directory.py
+│   ├── 29_mini_file_organizer.py
+│   ├── 30_os_check_path_exists.py
+│   ├── 31_os_rename_and_remove_file.py
+│   ├── 32_os_path_manipulations.py
+│   ├── 33_json_write_and_dump.py
+│   ├── 34_json_read_and_load.py
+│   └── 35_csv_dict_reader_writer.py
 ├── .gitignore
 └── README.md
 ```
@@ -510,6 +546,48 @@ Python_practice/
 
 ---
 
+### 🔹 Module 8: File I/O, CSV, OS Module & JSON Handling
+
+| # | File Name | Category / Concept | Problem Description |
+|:---:|---|---|---|
+| 01 | [01_create_and_write_file.py](Files_IO_AND_osmodule/01_create_and_write_file.py) | File Writing (`open(..., 'w')`) | Creates and writes text strings into `notes.txt` using the write mode. |
+| 02 | [02_read_file_contents.py](Files_IO_AND_osmodule/02_read_file_contents.py) | File Reading (`read()`) | Reads the entire contents of a text file and prints it to stdout. |
+| 03 | [03_read_first_n_characters.py](Files_IO_AND_osmodule/03_read_first_n_characters.py) | Character Slicing (`read(n)`) | Reads and displays the first $N$ characters (20 chars) from a file. |
+| 04 | [04_read_single_line.py](Files_IO_AND_osmodule/04_read_single_line.py) | Line Reading (`readline()`) | Creates a multiline file and reads only the first single line. |
+| 05 | [05_read_all_lines.py](Files_IO_AND_osmodule/05_read_all_lines.py) | List of Lines (`readlines()`) | Reads all lines of a text file into a Python list structure. |
+| 06 | [06_read_line_by_line_loop.py](Files_IO_AND_osmodule/06_read_line_by_line_loop.py) | File Iteration (`for line in file`) | Reads a text file line-by-line using a memory-efficient `for` loop. |
+| 07 | [07_count_lines_in_file.py](Files_IO_AND_osmodule/07_count_lines_in_file.py) | Line Statistics | Counts the total number of lines in a text file. |
+| 08 | [08_count_characters_in_file.py](Files_IO_AND_osmodule/08_count_characters_in_file.py) | Character Statistics | Computes the total character count of a file using `len(content)`. |
+| 09 | [09_count_words_in_file.py](Files_IO_AND_osmodule/09_count_words_in_file.py) | Word Statistics | Calculates total word count in a file by splitting whitespace tokens. |
+| 10 | [10_append_data_to_file.py](Files_IO_AND_osmodule/10_append_data_to_file.py) | File Appending (`open(..., 'a')`) | Appends additional text content without modifying or overwriting existing data. |
+| 11 | [11_write_multiple_lines.py](Files_IO_AND_osmodule/11_write_multiple_lines.py) | Batch Writing (`writelines()`) | Writes an iterable list of string records to a file. |
+| 12 | [12_copy_file_content.py](Files_IO_AND_osmodule/12_copy_file_content.py) | File Duplication | Reads from a source file and writes an exact copy into a backup file. |
+| 13 | [13_count_vowels_in_file.py](Files_IO_AND_osmodule/13_count_vowels_in_file.py) | Character Frequency Counter | Counts and summarizes frequencies of vowels (`a, e, i, o, u`) in a file. |
+| 14 | [14_count_char_types_in_file.py](Files_IO_AND_osmodule/14_count_char_types_in_file.py) | Character Classification | Classifies and counts uppercase, lowercase, numeric digits, and spaces. |
+| 15 | [15_find_word_in_file.py](Files_IO_AND_osmodule/15_find_word_in_file.py) | Substring Search | Checks whether a target word exists within a text file. |
+| 16 | [16_replace_word_in_file.py](Files_IO_AND_osmodule/16_replace_word_in_file.py) | Text Transformation | Replaces target substrings and persists the modified content back to the file. |
+| 17 | [17_reverse_file_content.py](Files_IO_AND_osmodule/17_reverse_file_content.py) | String Reversal | Reverses the entire character sequence of a file and saves to a new file. |
+| 18 | [18_with_open_context_manager.py](Files_IO_AND_osmodule/18_with_open_context_manager.py) | Context Managers (`with`) | Demonstrates automatic, deterministic closing of file handles. |
+| 19 | [19_file_pointer_tell.py](Files_IO_AND_osmodule/19_file_pointer_tell.py) | Stream Inspection (`tell()`) | Inspects and displays current byte position of the file stream pointer. |
+| 20 | [20_file_pointer_seek.py](Files_IO_AND_osmodule/20_file_pointer_seek.py) | Stream Repositioning (`seek()`) | Repositions the file pointer back to byte offset 0 for multiple read passes. |
+| 21 | [21_create_csv_file.py](Files_IO_AND_osmodule/21_create_csv_file.py) | CSV Generation (`csv.writer`) | Creates a structured `students.csv` file using `writerows()`. |
+| 22 | [22_read_csv_file.py](Files_IO_AND_osmodule/22_read_csv_file.py) | CSV Parsing (`csv.reader`) | Parses and prints tabular rows and columns from a CSV file. |
+| 23 | [23_csv_highest_marks.py](Files_IO_AND_osmodule/23_csv_highest_marks.py) | CSV Record Aggregation | Scans CSV student records to find the top scoring student. |
+| 24 | [24_csv_average_marks.py](Files_IO_AND_osmodule/24_csv_average_marks.py) | Numeric CSV Computation | Calculates the arithmetic mean average marks from numeric CSV records. |
+| 25 | [25_csv_filter_marks.py](Files_IO_AND_osmodule/25_csv_filter_marks.py) | CSV Conditional Filtering | Filters and displays only CSV records meeting a threshold condition (> 80 marks). |
+| 26 | [26_os_get_current_directory.py](Files_IO_AND_osmodule/26_os_get_current_directory.py) | Working Directory (`os.getcwd`) | Fetches and prints the current active working directory path. |
+| 27 | [27_os_list_files_and_folders.py](Files_IO_AND_osmodule/27_os_list_files_and_folders.py) | Directory Listing (`os.listdir`) | Lists all files and subdirectories located within a directory path. |
+| 28 | [28_os_create_directory.py](Files_IO_AND_osmodule/28_os_create_directory.py) | Directory Creation (`os.mkdir`) | Creates new directories safely with existence validation checks. |
+| 29 | [29_mini_file_organizer.py](Files_IO_AND_osmodule/29_mini_file_organizer.py) | File Organizer Project | Mini-project automating file sorting into dedicated subfolders by extension. |
+| 30 | [30_os_check_path_exists.py](Files_IO_AND_osmodule/30_os_check_path_exists.py) | Path Verification (`os.path`) | Validates path existence and identifies file vs directory entity types. |
+| 31 | [31_os_rename_and_remove_file.py](Files_IO_AND_osmodule/31_os_rename_and_remove_file.py) | File Mutation & Deletion | Renames files and deletes temporary files using `os.rename` and `os.remove`. |
+| 32 | [32_os_path_manipulations.py](Files_IO_AND_osmodule/32_os_path_manipulations.py) | Path Manipulation Utility | Performs `join()`, `dirname()`, `basename()`, and `splitext()` operations. |
+| 33 | [33_json_write_and_dump.py](Files_IO_AND_osmodule/33_json_write_and_dump.py) | JSON Serialization (`json.dump`) | Serializes nested Python dictionaries and lists into a formatted JSON file. |
+| 34 | [34_json_read_and_load.py](Files_IO_AND_osmodule/34_json_read_and_load.py) | JSON Deserialization (`json.load`) | Reads and parses JSON file contents into native Python dictionary structures. |
+| 35 | [35_csv_dict_reader_writer.py](Files_IO_AND_osmodule/35_csv_dict_reader_writer.py) | Dictionary CSV Operations | Reads and writes CSV files with header key mapping via `DictReader` & `DictWriter`. |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -531,6 +609,7 @@ python Functions/01_simple_greeting_function.py
 python DataStructures/01_create_and_print_list.py
 python OOPS/01_create_class.py
 python Adv_python/01_args_sum_numbers.py
+python Files_IO_AND_osmodule/01_create_and_write_file.py
 ```
 
 ---
